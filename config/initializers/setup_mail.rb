@@ -5,3 +5,5 @@ ActionMailer::Base.smtp_settings = {
   :password                      => Settings.sendcloud.password,
   :authentication       => "login"
 }
+
+ActionMailer::Base.default_url_options[:host] = "localhost:3000"
