@@ -1,0 +1,14 @@
+default: &default
+  sendcloud:
+    user_name: 'postmaster@username.sendcloud.org'  # replace with your own
+    password: 'password' # replace with your own
+
+production:
+  <<: *default
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  default_password: ''
